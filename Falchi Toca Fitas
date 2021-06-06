@@ -192,4 +192,4 @@ async def change_status():
 
 
 keep_alive()
-client.run('ODUwNjYzNTE1NzQ3OTA5NjQz.YLtAIg.KyYWiZeGWGI1bdD3QzouUF9B0fs')
+client.run('Token')
