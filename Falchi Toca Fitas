@@ -61,7 +61,7 @@ loop = False
 @client.event
 async def on_ready():
     change_status.start()
-    print('Bot ta on caralho!')
+    print('Build Success!')
 
 @client.event
 async def on_member_join(member):
@@ -70,22 +70,22 @@ async def on_member_join(member):
 
 @client.command(name='ping', help='Esse comando mostra tua net de padaria seu merda')
 async def ping(ctx):
-    await ctx.send(f'**Pobre detectado! A latencia da sua internet de padaria eh**: {round(client.latency * 1000)}ms')
+    await ctx.send(A latencia da sua internet é**: {round(client.latency * 1000)}ms')
 
 @client.command(name='oi', help='Esse comando lhe envia uma mensagem de bom dia!')
 async def oi(ctx):
-    resposta = ['**Vai pra casa do caralho porra**', '**tava dormindo e tu veio me acordar corno**', '**quer o de sempre chefia?**', '**hahahahaha ronaldinho soccer 64**']
+    resposta = ['**Deixa eu dormi**', '**tava dormindo e tu veio me acordar T_T**', '**quer o de sempre chefia?**', '**hahahahaha ronaldinho soccer 64**']
     await ctx.send(choice(resposta))
 
 @client.command(name='credito', help='Mostra o grandissimo criador do bot')
 async def credito(ctx):
     await ctx.send('**Made by Falchi**')
-    await ctx.send('Obrigado ao querido Jian pika fina pela ideia')
-    await ctx.send('Quem usar Rythm em vez do meu bot vai tomar no cu porra')
+    await ctx.send('Obrigado ao querido Jian pela ideia')
+    await ctx.send('Quem usar Rythm em vez do meu bot vai me deixar triste')
 
-@client.command(name='morra', help='Frases suicidas')
+@client.command(name='morra', help='Frases tristes')
 async def morra(ctx):
-    responses = ['**por qual motivo eu existo?**', '**eu tenho um proposito?**', '**me mata logo caralho**']
+    responses = ['**por qual motivo eu existo?**', '**eu tenho um proposito?**', '**deixa eu quieto**']
     await ctx.send(choice(responses))
 
 @client.command(name='pobre', help='frases amigaveis')
@@ -96,7 +96,7 @@ async def pobre(ctx):
 @client.command(name='join', help='Faz o bot conectar em um voicechat')
 async def join(ctx):
     if not ctx.message.author.voice:
-        await ctx.send("Voce nao esta conectado em um chat de voz porra")
+        await ctx.send("Voce nao esta conectado em um chat de voz")
         return    
 
     else:
