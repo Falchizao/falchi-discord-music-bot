@@ -52,7 +52,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
 client = commands.Bot(command_prefix='.')
 
-status = ['Meu deus, por que fui criado?','Digite .help para os comandos', 'Puta merda eu existo']
+status = ['Meu deus, por que fui criado?','Digite .help para os comandos', 'Merda eu existo']
 
 queue = []
 
@@ -68,7 +68,7 @@ async def on_member_join(member):
     channel = discord.utils.get(member.guild.channels, name='general')
     await channel.send(f'Bem vindo {member.mention}!  Digite `.help` para detalhes!')
 
-@client.command(name='ping', help='Esse comando mostra tua net de padaria seu merda')
+@client.command(name='ping', help='Esse comando mostra tua net de padaria')
 async def ping(ctx):
     await ctx.send(A latencia da sua internet é**: {round(client.latency * 1000)}ms')
 
