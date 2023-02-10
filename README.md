@@ -1,2 +1,2 @@
 # Discord-Music-and-general-BOT
-# Made by me  
+# Simple discord bot made with python, this application consumes the discord API for studying purposes
